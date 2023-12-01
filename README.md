@@ -40,5 +40,101 @@ $\zeta(s) = 1^s + 2^{-s} + 3^{-s} + 4^{-s} + \ldots$
 
 In certain regions, this series converges, providing the definition of the Riemann Zeta Function in that region.
 
+## Zeta Zeros
+
+### Riemann–Siegel Formula
+
+In mathematics, the Riemann-Siegel formula is an asymptotic formula for the error in the approximation of the Riemann zeta function. The formula approximates the values of the zeta function through the sum of two finite Dirichlet series. 
+
+If `M` and `N` are non-negative integers, then the `ζ` is equal to
+
+$$
+\zeta(s)=\sum_{n=1}^N \frac{1}{n^s}+\gamma(1-s) \sum_{n=1}^M \frac{1}{n^{1-s}}+R(s)
+$$
+
+where
+
+$$
+\gamma(s)=\pi^{\frac{1}{2}-s} \frac{\Gamma\left(\frac{s}{2}\right)}{\Gamma\left(\frac{1}{2}(1-s)\right)}
+$$
+
+is the factor appearing in the functional equation
+
+$$
+\zeta(s)=\gamma(1-s) \zeta(1-s)
+$$
+
+and
+
+$$
+R(s)=\frac{-\Gamma(1-s)}{2 \pi i} \int \frac{(-x)^{s-1} e^{-N x}}{e^x-1} d x
+$$
+
+### Riemann–von Mangoldt Formula
+
+The formula states that the number `N(T)` of zeros of the zeta function with imaginary part greater than 0 and less than or equal to `T` satisfies
+
+$$
+N(T)=\frac{T}{2 \pi} \log \frac{T}{2 \pi}-\frac{T}{2 \pi}+O(\log T)
+$$
+
+The formula can be reduced to
+
+$$
+N(T) \sim \frac{T}{2 \pi} \log \frac{T}{2 \pi}
+$$
+
+Order the imaginary parts of the nontrivial zeros of the zeta function that lie in the upper half-plane in order of magnitude. We get an asymptotic expression for the imaginary parts of the nontrivial zeros of the zeta function.
+
+$$
+\beta_n \sim \frac{2 \pi n}{\log n}
+$$
+
+## MPI Functions
+
+The program utilizes the following MPI functions:
+
+- `MPI_Init`
+- `MPI_Comm_size`
+- `MPI_Comm_rank`
+- `MPI_Bcast`
+- `MPI_Reduce`
+- `MPI_Finalize`
+
+## Results
+
+### Zeta Sums
+
+Using the MPI program to calculate the value of the `ζ(3)` and measure efficiency
+
+| p   | n   | sum                  | Error              | Efficiency           |
+| --- | --- | -------------------- | -------------------| ---------------------|
+| 8   | 100 | 1.202007400659678    | 0.000049502499916  | 0.000000312518862    |
+| 4   | 100 | 1.202007400659678    | 0.000049502499916  | 0.000161325140956    |
+| 2   | 100 | 1.202007400659678    | 0.000049502499916  | 0.001091348728518    |
+| 1   | 100 | 1.202007400659678    | 0.000049502499916  | 0.004833581209293    |
+
+### Zero Points
+
+Using the mpmath library, the following zeros were calculated using the Riemann Segal formula, listing only the first ten
+
+| Zero Point | Value                                      |
+|------------|--------------------------------------------|
+| 1 | (0.5 + 14.134725141734693790457251983562470270784257115699j) |
+| 2 | (0.5 + 21.022039638771554992628479593896902777334340524903j) |
+| 3 | (0.5 + 25.010857580145688763213790992562821818659549672558j) |
+| 4 | (0.5 + 30.424876125859513210311897530584091320181560023715j) |
+| 5 | (0.5 + 32.935061587739189690662368964074903488812715603517j) |
+| 6 | (0.5 + 37.586178158825671257217763480705332821405597350831j) |
+| 7 | (0.5 + 40.918719012147495187398126914633254395726165962777j) |
+| 8 | (0.5 + 43.327073280914999519496122165406805782645668371837j) |
+| 9 | (0.5 + 48.005150881167159727942472749427516041686844001144j) |
+| 10 | (0.5 + 49.773832477672302181916784678563724057723178299677j) |
+
+### Riemann Zeta Function Visualization
+
+![Local Image](images/sample.jpg)
+![Local Image](images/sample.jpg)
+![Local Image](images/sample.jpg)
 
 

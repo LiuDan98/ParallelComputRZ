@@ -133,6 +133,9 @@ Using the mpmath library, the following zeros were calculated using the Riemann 
 
 ### Riemann Zeta Function Visualization
 
+Visualize the Riemann zeta function:
+
+<img src="results/ZetaVisualization.png" width="300" alt="Local Image">
 
 ### Riemann Zeta Function Zeros Visualization
 
@@ -144,8 +147,13 @@ Visualize the first one thousand non-trivial zeros of the Riemann zeta function:
 
 <img src="results/ZetaZeros1000.png" width="300" alt="Local Image">
 
+## Contributing
 
+If you encounter any issues or have suggestions for improvement, we warmly welcome you to raise Issues or submit pull requests to contribute to our continuous improvement efforts.
 
+## Authors
+
+If you have any questions, please contact Dan Liu at dliu3405@usc.edu.
 
 
 

@@ -136,7 +136,7 @@ Using the mpmath library, the following zeros were calculated using the Riemann 
 
 Visualize the Riemann zeta function:
 
-<img src="results/ZetaVisualization.png" width="300" alt="Local Image">
+<img src="results/ZetaVisualization.png" width="500" alt="Local Image">
 
 ### Riemann Zeta Function Zeros Visualization
 

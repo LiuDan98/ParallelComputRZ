@@ -142,11 +142,11 @@ Visualize the Riemann zeta function:
 
 Visualize the first thirty non-trivial zeros of the Riemann zeta function:
 
-<img src="results/ZetaZeros30.png" width="300" alt="Local Image">
+<img src="results/ZetaZeros30.png" width="500" alt="Local Image">
 
 Visualize the first one thousand non-trivial zeros of the Riemann zeta function:
 
-<img src="results/ZetaZeros1000.png" width="300" alt="Local Image">
+<img src="results/ZetaZeros1000.png" width="500" alt="Local Image">
 
 ## Contributing
 

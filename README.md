@@ -19,6 +19,7 @@ This project uses parallel computing to explore the properties and visualization
   - `RZzeros.txt`: A file for storing the first 1000 Riemann nontrivial zeros.
   - `ZetaZeros30.png`: Distribution of the first 30 nontrivial zeros of the Riemann Zeta function.
   - `ZetaZeros1000.png`: Distribution of the first 1000 nontrivial zeros of the Riemann Zeta function.
+  - `ZetaVisualization.png`: Visualization of Riemannian Zeta function generation with OpenGL.
 
 ## Riemann Zeta function
 

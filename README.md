@@ -33,11 +33,11 @@ The Riemann Zeta function plays a crucial role in mathematics, particularly in c
 
 The analytic form of the Riemann Zeta Function on the complex plane is defined as follows:
 
-$\zeta(s) = 1^s + 2^{-s} + 3^{-s} + 4^{-s} + \ldots$
+$$\zeta(s) = 1^s + 2^{-s} + 3^{-s} + 4^{-s} + \ldots$$
 
 where `s` is a complex number. Specifically, if $s = a + bi$, then
 
-$\zeta(s) = 1^s + 2^{-s} + 3^{-s} + 4^{-s} + \ldots$
+$$\zeta(s) = 1^s + 2^{-s} + 3^{-s} + 4^{-s} + \ldots$$
 
 In certain regions, this series converges, providing the definition of the Riemann Zeta Function in that region.
 

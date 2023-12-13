@@ -27,9 +27,9 @@ def mouse_wheel(event):
     scale = abs(scale)
 
 def mouse_dragged(event):
-    if event.type == pygame.MOUSEMOTION and event.buttons[2]:  # Check if right mouse button is pressed
+    if event.type == pygame.MOUSEMOTION and event.buttons[2]:  
         glViewport(0, 0, event.x, event.y)
-    elif event.type == pygame.MOUSEMOTION and not any(event.buttons):  # Check if no mouse button is pressed
+    elif event.type == pygame.MOUSEMOTION and not any(event.buttons):  
         glViewport(0, 0, window[0], window[1])
 
 def mouse_pressed(event):
@@ -76,9 +76,12 @@ def draw():
     glLoadIdentity()
     glTranslated(trans[0], trans[1], 0)
 
-    glColor3fv(black)  # Set color to black for the coordinate system
+    glColor3fv(black)  
+    
+    # Set color to black for the coordinate system
 
     # Draw two perpendicular lines for coordinate axes
+
     glBegin(GL_LINES)
     glVertex2f(-trans[0], 0)
     glVertex2f(trans[0], 0)
@@ -124,7 +127,7 @@ def draw():
 
     if not paused and update is None:
         comp = complex(pygame.mouse.get_pos()[0] - trans[0], -(pygame.mouse.get_pos()[1] - trans[1]))
-        # comp = complex(pygame.mouse.get_pos()[0] - trans[0], pygame.mouse.get_pos()[1] - trans[1])
+        
     if update is not None:
         comp = update * scale
 
